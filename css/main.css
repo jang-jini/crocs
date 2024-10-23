@@ -1,0 +1,810 @@
+/* Set inner size */
+.inner {
+    max-width: 1320px;
+    margin: 0 auto;
+
+    /* background-color: #ff0; */
+}
+
+/* Header styles */
+#header {
+    width: 176rem;
+    height: 7rem;
+    /* border: 1px solid #000; */
+    background: #fff;
+    border-radius: 3rem;
+    margin: 1rem auto;
+    padding: 0 5rem;
+    box-shadow: 0 0rem 1.2rem rgba(0, 0, 0, 0.16);
+
+    position: relative;
+}
+
+.logo {
+    width: 15rem;
+    height: 2.5rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    background-image: url(../img/logo.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    cursor: pointer;
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+}
+
+.gnb {
+    width: 78.4rem;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gnb > li {
+    position: relative;
+}
+
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-top: 2rem;
+    transform: translateX(-50%);
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    background-color: #fff;
+    box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.1);
+    padding: 0;
+    min-width: 150px;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.4s;
+    z-index: 1000;
+}
+.submenu.active {
+    max-height: 300px; /* 적절한 값으로 조정하세요 */
+    padding: 10px 0;
+}
+
+.submenu li {
+    padding: 8px 20px;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.submenu.active li {
+    opacity: 1;
+}
+
+.gnb li a {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.user-actions {
+    width: 18.4rem;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-actions {
+    width: auto;
+    position: absolute;
+    right: 0;
+    transform: translateX(-50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+.user-actions li {
+    width: 2.8rem;
+    height: 2.8rem;
+}
+
+.user-actions li a {
+    padding: 100%;
+}
+
+.user-actions li:nth-child(1) {
+    background-image: url(../img/search-icon.svg);
+}
+
+.user-actions li:nth-child(1):hover {
+    background-image: url(../img/search-icon-hover.svg);
+}
+
+.user-actions li:nth-child(2) {
+    background-image: url(../img/cart-icon.svg);
+}
+
+.user-actions li:nth-child(2):hover {
+    background-image: url(../img/cart-icon-hover.svg);
+}
+
+.user-actions li:nth-child(3) {
+    background-image: url(../img/user-icon.svg);
+}
+
+.user-actions li:nth-child(3):hover {
+    background-image: url(../img/user-icon-hover.svg);
+}
+
+/* 메인 */
+
+#hero {
+    width: 176rem;
+    height: 84rem;
+    margin: 0 auto;
+    border-radius: 3rem;
+    background-image: url(./);
+    overflow: hidden;
+}
+
+.hero-swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.hero-swiper .swiper-slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero-swiper .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero-swiper .swiper-pagination-bullet {
+    background: var(--main-color);
+    opacity: 0.5;
+}
+
+.hero-swiper .swiper-pagination-bullet-active {
+    opacity: 1;
+}
+
+/* 신상품 ----------------------------------------*/
+
+#new-products {
+    width: 100%;
+    height: 90rem;
+    /* background-color: #f5f5f5; */
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.produtcs-con {
+    width: 100%;
+    height: 100%;
+    /* background: #0ff; */
+}
+
+.product-list {
+    width: 100%;
+    height: 54.5rem;
+    margin-top: 2.4rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.product-list li {
+    width: 31.5rem;
+    /* background: #f00; */
+    border-radius: 2.4rem;
+    overflow: hidden;
+
+    position: relative;
+}
+
+.product-info {
+    padding: 3.6rem 2.6rem 5.6rem 2.6rem;
+}
+
+.product-list li figure {
+    width: 100%;
+    height: 34rem;
+    border-radius: 2.4rem;
+    overflow: hidden;
+    background: #e6e9e8;
+    position: relative;
+}
+
+.product-list li figure > img {
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.4s;
+}
+/* 호버 */
+/* .product-list li figure:hover > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+.product-list li:nth-child(3) figure > img {
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* 호버 */
+/* .product-list li:nth-child(3) figure:hover > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+.color-options {
+    display: flex;
+    gap: 0.8rem;
+}
+
+.color-options span {
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+}
+
+.product-list li a {
+    position: absolute;
+    right: 2.6rem;
+    bottom: 5.6rem;
+}
+
+.product-info dl {
+    margin-top: 2rem;
+}
+
+.product-info dl dt {
+    font-weight: 700;
+    font-size: 2.8rem;
+
+    transition: 0.4s;
+}
+.product-info dl dd {
+    font-weight: 500;
+    font-size: 2.2rem;
+
+    transition: 0.4s;
+}
+
+/* 호버 */
+.product-info dl:hover dt {
+    font-weight: 500;
+    font-size: 2.2rem;
+}
+.product-info dl:hover dd {
+    font-weight: 700;
+    font-size: 2.8rem;
+    color: var(--main-color);
+}
+
+/* 컬렉션-------------------------------------- */
+
+#collections {
+    width: 100%;
+    height: 100rem;
+    background-color: #f7f7f7;
+
+    /* margin-top: 10rem; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.collection-wrap {
+    width: 100%;
+    min-width: 132rem;
+    height: 100%;
+    /* background: #f00; */
+}
+
+.collection-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 2rem;
+    max-width: 132rem; /* 필요에 따라 조정 */
+    margin: 2.4rem auto;
+}
+
+.collection-item {
+    width: 100%;
+    height: 38.4rem;
+    border-radius: 2.4rem;
+    overflow: hidden;
+
+    position: relative;
+}
+
+.collection-item figure {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.collection-item figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.collection-con {
+    width: 100%;
+    height: 11rem;
+    background: #000;
+
+    position: absolute;
+    bottom: 0;
+    padding: 2.6rem 3.8rem 3.4rem 3.8rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+
+/* 사진위치잡기-------------------------------- */
+.collection-item:nth-child(1) figure > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.collection-item:nth-child(2) figure > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.collection-item:nth-child(3) figure > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.collection-item:nth-child(4) figure > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* 위치조절 끝-------------------------------- */
+
+.collection-con dl {
+    display: flex;
+    align-items: flex-end;
+    gap: 1.4rem;
+}
+
+.collection-con dl dt {
+    font-weight: 600;
+    font-size: 3.4rem;
+    color: #fff;
+}
+.collection-con dl dd {
+    font-weight: 400;
+    font-size: 2rem;
+    color: #fff;
+
+    position: relative;
+    bottom: 0.5rem;
+}
+
+/* 반응형 디자인을 위한 미디어 쿼리 */
+@media (max-width: 768px) {
+    .collection-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* 컬렉션 끝-------------------------------- */
+
+/* 콜라보시작-------------------------------- */
+
+#collaborations {
+    width: 100%;
+    height: 120rem;
+    /* background-color: #7a2d2d; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.collabo-con-wrap {
+    width: 132rem;
+    height: 100%;
+    /* background-color: #f7f7f7; */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.collabo-title-wrap {
+    height: 100%;
+    /* background-color: #f47; */
+}
+
+.collabo-title-wrap h3 {
+    font-weight: 700;
+    font-size: 5.8rem;
+}
+
+.collabo-title-wrap p {
+    font-weight: 500;
+    font-size: 2rem;
+
+    margin-top: 2rem;
+}
+
+.collaboration-list {
+    width: 76.2rem;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.collaboration-list li {
+    width: 76.2rem;
+    height: 23rem;
+    background-color: #ff3;
+    border-radius: 2.4rem;
+    overflow: hidden;
+}
+
+.collabo-con {
+    width: 18rem;
+    height: 23rem;
+    border-top-left-radius: 2.4rem;
+    border-bottom-left-radius: 2.4rem;
+    padding: 4.3rem 3.1rem 4.3rem 3.1rem;
+
+    color: #fff;
+
+    position: absolute;
+    background: #fff;
+}
+
+.collaboration-list li:nth-child(1) .collabo-con {
+    background: #ffe432;
+}
+
+.collaboration-list li:nth-child(2) .collabo-con {
+    background: #f4ccbe;
+}
+
+.collaboration-list li:nth-child(3) .collabo-con {
+    background: #bfbf93;
+}
+
+.collaboration-list li:nth-child(4) .collabo-con {
+    background: #101a2f;
+}
+
+.collabo-con dl dt {
+    font-weight: 700;
+    font-size: 3.4rem;
+}
+.collabo-con dl dd {
+    font-weight: 400;
+    font-size: 1.8rem;
+
+    margin-bottom: 1.6rem;
+}
+
+/* 베네핏 ---------------------------------------- */
+
+#benefits {
+    width: 100%;
+    height: 60rem;
+    /* background-color: #f7f7f7; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.benefit-wrap {
+    width: 100%;
+    height: 100%;
+    /* background-color: #f00; */
+}
+
+.benefit-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin: 2.4rem auto;
+}
+
+.benefit-list li {
+    /* background: #f0f; */
+    width: 31.5rem;
+    height: 31.5rem;
+    border: 2.4px solid #000;
+    border-radius: 2.4rem;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+.benefit-con {
+    width: 25.4rem;
+    height: 21.5rem;
+    /* background: #ff5; */
+
+    position: relative;
+}
+
+.upload-date {
+    font-weight: 300;
+    font-size: 1.6rem;
+}
+.benefit-con dl dt {
+    font-weight: 600;
+    font-size: 3rem;
+
+    margin-top: 1.6rem;
+}
+.benefit-con dl dd {
+    width: 18rem;
+    font-weight: 400;
+    font-size: 1.6rem;
+
+    margin-top: 1.4rem;
+}
+.benefit-con a {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+/* 호버 */
+
+.benefit-list li:hover {
+    background: #000;
+    color: #fff;
+}
+
+.benefit-list li:hover dl dt {
+    font-weight: 600;
+    color: #fff;
+}
+
+.benefit-list li:hover a {
+    background: #fff;
+    color: #000;
+}
+
+.benefit-list li:hover a::after {
+    background-image: url(../img/more-view-black-icon.svg);
+}
+
+/* 푸터 ---------------------------------------- */
+
+#footer {
+    width: 100%;
+    height: 60rem;
+    background-color: #f7f7f7;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-con-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.footer-content {
+    width: 100%;
+    height: 100%;
+    /* background: #454; */
+}
+
+.footer-logo {
+    width: 18rem;
+    height: 3.6rem;
+}
+
+.footer-logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.footer-nav {
+    width: 50rem;
+    height: 100%;
+    /* background: #f00; */
+
+    margin-top: 4rem;
+}
+
+.footer-nav ul {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-nav ul li {
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: #000;
+
+    transition: 0.4s;
+}
+
+.social-links {
+    width: 24rem;
+    height: 4rem;
+
+    margin-top: 4rem;
+}
+
+.social-links ul {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-links ul li {
+    width: 4rem;
+    height: 4rem;
+    /* background: #fff; */
+
+    cursor: pointer;
+}
+
+.social-links ul li:nth-child(1) {
+    background-image: url(../img/youtube-logo.svg);
+}
+
+.social-links ul li:nth-child(2) {
+    background-image: url(../img/twitter-logo.svg);
+}
+
+.social-links ul li:nth-child(3) {
+    background-image: url(../img/facebook-logo.svg);
+}
+
+.copyright {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 160%;
+
+    margin-top: 4rem;
+}
+
+.crocs-club {
+    width: 28rem;
+    height: 6rem;
+    background: var(--main-color);
+    border-radius: 3rem;
+    border: 2px solid var(--main-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.4s;
+}
+
+.crocs-club p {
+    font-weight: 600;
+    font-size: 2rem;
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    transition: 0.4s;
+}
+
+.crocs-club p::after {
+    content: "";
+    display: block;
+    width: 3.2rem;
+    height: 3.2rem;
+    background: #fff;
+    border-radius: 50%;
+
+    background-image: url(../img/more-view-icon.svg);
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    transition: 0.4s;
+}
+
+/* 호버 */
+
+.crocs-club:hover {
+    background: #fff;
+    border: 2px solid var(--main-color);
+
+    cursor: pointer;
+}
+
+.crocs-club:hover p {
+    color: var(--main-color);
+}
+
+.crocs-club:hover p::after {
+    background: var(--main-color);
+    background-image: url(../img/more-icon.svg);
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.crocs-club:hover b {
+    display: block;
+}
