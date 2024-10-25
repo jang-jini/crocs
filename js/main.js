@@ -90,37 +90,44 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         }
     });
+});
 
-    const swiper = new Swiper(".products-swiper", {
-        // 기본 설정
-        slidesPerView: 1,
-        spaceBetween: 10,
-        loop: true,
-
-        // 페이지네이션 설정
+document.addEventListener("DOMContentLoaded", function () {
+    const swiperConfig = {
+        slidesPerView: 4,
+        spaceBetween: 20,
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
         },
+        // 페이지네이션 위치 조정
+        containerModifierClass: "swiper-container-",
+    };
 
-        // 네비게이션 화살표 설정
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+    // Men's Best Sellers Swiper
+    new Swiper(".mens-best-swiper", {
+        ...swiperConfig,
+        pagination: {
+            ...swiperConfig.pagination,
+            el: ".mens-best-swiper .swiper-pagination",
         },
+    });
 
-        // 반응형 breakpoints
-        breakpoints: {
-            // 768px 이상일 때
-            768: {
-                slidesPerView: 2,
-                spaceBetween: 20,
-            },
-            // 1024px 이상일 때
-            1024: {
-                slidesPerView: 3,
-                spaceBetween: 30,
-            },
+    // Women's Best Sellers Swiper
+    new Swiper(".womens-best-swiper", {
+        ...swiperConfig,
+        pagination: {
+            ...swiperConfig.pagination,
+            el: ".womens-best-swiper .swiper-pagination",
+        },
+    });
+
+    // Kids' Best Sellers Swiper
+    new Swiper(".kids-best-swiper", {
+        ...swiperConfig,
+        pagination: {
+            ...swiperConfig.pagination,
+            el: ".kids-best-swiper .swiper-pagination",
         },
     });
 });

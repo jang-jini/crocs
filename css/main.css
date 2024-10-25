@@ -68,6 +68,7 @@ nav {
     max-height: 0;
     overflow: hidden;
     transition: 0.4s;
+    text-align: center;
     z-index: 1000;
 }
 .submenu.active {
@@ -88,6 +89,14 @@ nav {
 .gnb li a {
     font-size: 1.8rem;
     font-weight: 500;
+}
+
+.submenu li a {
+    font-size: 1.6rem;
+    color: #222;
+}
+.submenu li a:hover {
+    color: var(--main-color);
 }
 
 .user-actions {
@@ -321,11 +330,11 @@ nav {
 }
 
 /* 호버 */
-.product-info dl:hover dt {
+.product-list li:hover dl dt {
     font-weight: 500;
     font-size: 2.2rem;
 }
-.product-info dl:hover dd {
+.product-list li:hover dl dd {
     font-weight: 700;
     font-size: 2.8rem;
     color: var(--main-color);
@@ -403,24 +412,61 @@ nav {
     width: 100%;
     height: 100%;
     object-fit: cover;
+
+    transition: transform 0.3s ease-in-out;
 }
 
 .collection-item:nth-child(2) figure > img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: transform 0.3s ease-in-out;
 }
 
 .collection-item:nth-child(3) figure > img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: transform 0.3s ease-in-out;
 }
 
 .collection-item:nth-child(4) figure > img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* 호버 */
+.collection-item:nth-child(1):hover figure > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.05);
+}
+
+.collection-item:nth-child(2):hover figure > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    transform: scale(1.05);
+}
+
+.collection-item:nth-child(3):hover figure > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    transform: scale(1.05);
+}
+
+.collection-item:nth-child(4):hover figure > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    transform: scale(1.05);
 }
 /* 위치조절 끝-------------------------------- */
 
@@ -644,7 +690,7 @@ nav {
 
 #footer {
     width: 100%;
-    height: 60rem;
+    height: 40rem;
     background-color: #f7f7f7;
 
     display: flex;
