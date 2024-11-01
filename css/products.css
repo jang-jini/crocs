@@ -51,7 +51,6 @@
 
     position: absolute;
     top: 50%;
-    left: 30rem;
 }
 
 .products-best-clog {
@@ -179,7 +178,7 @@
 .kids-best-list figure {
     width: 100%;
     height: 23rem;
-    background: #412;
+    background: #e6e9e8;
 
     border-radius: 2rem;
     overflow: hidden;
@@ -249,6 +248,31 @@
     font-size: 2.8rem;
     color: var(--main-color);
 }
+/* 개별수정 */
+
+.mens-best-swiper-wrapper div:nth-of-type(2) figure img {
+    transform: translateY(-14%);
+}
+.mens-best-swiper-wrapper div:nth-of-type(6) figure img {
+    transform: translateY(-8%);
+}
+
+.womens-best-swiper-wrapper div:nth-of-type(3) figure img {
+    transform: translateY(-8%);
+}
+.womens-best-swiper-wrapper div:nth-of-type(4) figure img {
+    transform: translateY(10%);
+}
+.womens-best-swiper-wrapper div:nth-of-type(5) figure img {
+    transform: translate(4%, -12%);
+}
+.womens-best-swiper-wrapper div:nth-of-type(6) figure img {
+    transform: translateY(-14%);
+}
+
+.kids-best-swiper-wrapper div:nth-of-type(6) figure img {
+    transform: translateY(-14%);
+}
 
 /* 페이지네이션 */
 .swiper-wrapper {
@@ -261,6 +285,10 @@
 }
 :root {
     --swiper-theme-color: var(--main-color);
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--main-color) !important;
 }
 /* 지비츠베스트-------------------------------------------------- */
 
@@ -373,33 +401,5 @@
 }
 
 /* 지비츠베스트끝-------------------------------------------------- */
-
-/* 에필로그 */
-
-.products-brand-message {
-    width: 100%;
-    height: 50rem;
-    /* background: #f00; */
-    background: url(../img/product-epilogue.png) no-repeat 50% 40% / cover;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
-    color: #fff;
-}
-
-.products-brand-message p {
-    font-weight: 600;
-    font-size: 4rem;
-}
-
-.products-brand-message h2 {
-    font-weight: 800;
-    font-size: 5rem;
-}
-
-/* 에필로그끝 */
 
 /* 메인끝 */

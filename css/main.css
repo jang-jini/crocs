@@ -685,6 +685,30 @@ nav {
 .benefit-list li:hover a::after {
     background-image: url(../img/more-view-black-icon.svg);
 }
+/* 베네핏끝 ---------------------------------------- */
+.products-brand-message {
+    width: 100%;
+    height: 50rem;
+    /* background: #f00; */
+    background: url(../img/product-epilogue.png) no-repeat 50% 40% / cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    color: #fff;
+}
+
+.products-brand-message p {
+    font-weight: 600;
+    font-size: 4rem;
+}
+
+.products-brand-message h2 {
+    font-weight: 800;
+    font-size: 5rem;
+}
 
 /* 푸터 ---------------------------------------- */
 
