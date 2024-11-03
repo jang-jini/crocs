@@ -1,257 +1,283 @@
 @charset 'utf-8';
 
 .explore-hero {
-    width: 176rem;
-    height: 30rem;
-    border-radius: 2.4rem;
-    background: url(../img/product-visual.png) no-repeat 50% 83% / cover;
-    margin: 0 auto;
+  width: 176rem;
+  height: 30rem;
+  border-radius: 2.4rem;
+  background: url(../img/product-visual.png) no-repeat 50% 83% / cover;
+  margin: 0 auto;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 .explore-hero h2 {
-    font-weight: 600;
-    font-size: 5rem;
-    color: #fff;
+  font-weight: 600;
+  font-size: 5rem;
+  color: #fff;
 }
 
 .explore-intro {
-    width: 100%;
-    height: 40rem;
-    /* background: #f9f; */
+  width: 100%;
+  height: 40rem;
+  /* background: #f9f; */
 
-    position: relative;
+  position: relative;
 }
 
 .explore-intro h2 {
-    font-weight: 700;
-    font-size: 6rem;
-    color: #000;
+  font-weight: 700;
+  font-size: 6rem;
+  color: #000;
 
-    position: absolute;
-    top: 50%;
+  position: absolute;
+  top: 50%;
 }
 
 /* 비주얼끝*/
 
 .comfort ul {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 
-    margin-top: 2rem;
+  margin-top: 2rem;
 
-    display: flex;
-    gap: 2rem;
+  display: flex;
+  gap: 2rem;
 }
 
 .comfort ul li {
-    width: 50%;
-    height: 45rem;
-    border-radius: 1rem;
-    background: #333;
-    overflow: hidden;
+  width: 50%;
+  height: 45rem;
+  border-radius: 1rem;
+  background: #333;
+  overflow: hidden;
 
-    position: relative;
+  position: relative;
 }
 
 .comfort-con-wrap {
-    width: 100%;
-    height: 100%;
-    background: #f00;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .comfort ul li strong {
-    font-weight: 700;
-    font-size: 3.4rem;
-    color: #fff;
+  font-weight: 700;
+  font-size: 3.4rem;
+  color: #fff;
 
-    position: absolute;
-    left: 4rem;
-    bottom: 3rem;
+  position: absolute;
+  left: 4rem;
+  bottom: 3rem;
 }
 .comfort ul li p {
-    display: none;
+  display: none;
 
-    text-align: center;
-    font-weight: 600;
-    font-size: 2.4rem;
-    color: #fff;
+  text-align: center;
+  font-weight: 600;
+  font-size: 2.4rem;
+  color: #fff;
 }
 
 .comfort ul li:hover strong {
-    display: none;
+  display: none;
 }
 
 .comfort ul li:hover p {
-    display: block;
+  display: block;
 }
 /* ---------------------- */
 .Sustainability {
-    margin-top: 18rem;
+  margin-top: 18rem;
 }
 
 .Sustainability ul {
-    margin-top: 2rem;
-    width: 100%;
-    height: 100%;
+  margin-top: 2rem;
+  width: 100%;
+  height: 100%;
 
-    display: flex;
-    gap: 2rem;
+  display: flex;
+  gap: 2rem;
 }
 
 .Sustainability ul li {
-    width: 33.3333333333%;
-    height: 45rem;
-    background: #f00;
-    border-radius: 1rem;
-    overflow: hidden;
-    position: relative;
+  width: 33.3333333333%;
+  height: 45rem;
+  background: #f00;
+  border-radius: 1rem;
+  overflow: hidden;
+  position: relative;
 }
 
 .Sustainability ul li figure {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 .Sustainability ul li figure img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .Sustainability ul li p {
-    position: absolute;
-    left: 3rem;
-    bottom: 2rem;
-    font-weight: 600;
-    font-size: 2.4rem;
-    color: #fff;
+  position: absolute;
+  left: 3rem;
+  bottom: 2rem;
+  font-weight: 600;
+  font-size: 2.4rem;
+  color: #fff;
 
-    z-index: 1;
+  z-index: 1;
 }
 
 .Sustainability ul li::after {
-    content: "";
-    width: 100%;
-    height: 100%;
+  content: "";
+  width: 100%;
+  height: 100%;
 
-    position: absolute;
-    left: 0;
-    top: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
 
-    background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.2);
 
-    display: none;
+  display: none;
 }
 
 .Sustainability ul li:hover::after {
-    display: block;
+  display: block;
 }
 
 /* ............................... */
 .inspiration {
-    margin-top: 18rem;
+  margin-top: 18rem;
 }
 
 .inspiration ul {
-    margin-top: 2rem;
-    width: 100%;
-    height: 100%;
+  margin-top: 2rem;
+  width: 100%;
+  height: 100%;
 
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .inspiration ul li {
-    width: 65rem;
-    height: 40rem;
-    background: #f00;
-    border-radius: 1rem;
-    overflow: hidden;
-    position: relative;
+  width: 65rem;
+  height: 40rem;
+  background: #f00;
+  border-radius: 1rem;
+  position: relative;
+
+  transition: 0.4s;
 }
 
 .inspiration ul li figure {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 .inspiration ul li figure img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
+}
+.inspiration ul li:hover figure img {
+  transform: scale(1.05);
 }
 
 .inspiration ul li dl {
-    position: absolute;
-    left: 3rem;
-    bottom: 3rem;
-    color: #fff;
-    z-index: 1;
+  position: absolute;
+  left: 3rem;
+  bottom: 3rem;
+  color: #fff;
+  z-index: 1;
 }
 .inspiration ul li dl dt {
-    font-weight: 600;
-    font-size: 3rem;
+  font-weight: 600;
+  font-size: 3rem;
 }
 .inspiration ul li dl dd {
-    font-weight: 400;
-    font-size: 1.8rem;
+  font-weight: 400;
+  font-size: 1.8rem;
 }
 
 .inspiration ul li::after {
-    content: "";
-    width: 100%;
-    height: 24rem;
+  content: "";
+  width: 100%;
+  height: 24rem;
 
-    position: absolute;
-    left: 0;
-    bottom: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 
-    background: linear-gradient(to bottom, #ffffff00, #00000070);
+  background: linear-gradient(to bottom, #ffffff00, #00000070);
 }
 
 /* ...................... */
 .Customize {
-    margin: 18rem 0 20rem 0;
+  margin: 18rem 0 20rem 0;
 }
 
 .Customize ul {
-    margin-top: 2rem;
-    width: 100%;
-    height: 100%;
+  margin-top: 2rem;
+  width: 100%;
+  height: 100%;
 
-    display: flex;
-    gap: 2rem;
+  display: flex;
+  gap: 2rem;
 }
 
 .Customize ul li {
-    width: 33.3333%;
-    height: 45rem;
-    border-radius: 1rem;
-    overflow: hidden;
-    background: #f00;
+  width: 33.3333%;
+  height: 45rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  background: #f00;
 
-    position: relative;
+  position: relative;
 }
 
 .Customize ul li figure {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 .Customize ul li figure img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .Customize ul li dl {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    text-align: center;
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+
+  color: #fff;
+}
+
+.Customize ul li dl dt {
+  font-weight: 600;
+  font-size: 3rem;
+
+  margin-top: 2rem;
+}
+.Customize ul li dl dd {
+  font-weight: 400;
+  font-size: 1.8rem;
 }
