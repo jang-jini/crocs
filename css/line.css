@@ -40,12 +40,16 @@
 
 .list-wrap {
     width: 100%;
-    height: 120rem;
+    height: 100rem;
     /* background: #f00;    */
 
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.sandals-section {
+    margin: 10rem 0 20rem 0;
 }
 
 .lineup-list-wrap {
@@ -70,9 +74,9 @@
 .lineup-list-wrap li figure {
     width: 100%;
     height: 23rem;
-    background: #412;
+    background: #e6e9e8;
 
-    border-radius: 2rem;
+    border-radius: 1rem;
     overflow: hidden;
 }
 
@@ -130,4 +134,41 @@ span {
     font-weight: 700;
     font-size: 2.8rem;
     color: var(--main-color);
+}
+
+/* 이미지위치잡기 */
+.clogs-list li:nth-of-type(1) figure img {
+    transform: translateY(-10%);
+}
+.clogs-list li:nth-of-type(2) figure img {
+    transform: translateY(-10%);
+}
+.clogs-list li:nth-of-type(5) figure img {
+    transform: translateY(-17%);
+}
+.clogs-list li:nth-of-type(6) figure img {
+    transform: translateY(-16%);
+}
+.clogs-list li:nth-of-type(7) figure img {
+    transform: translateY(-8%);
+}
+.clogs-list li:nth-of-type(8) figure img {
+    transform: translateY(-8%);
+}
+/* 샌들이미지위치 */
+
+.sandals-list li:nth-of-type(2) figure img {
+    transform: scale(90%) translateY(-6%);
+}
+.sandals-list li:nth-of-type(5) figure img {
+    transform: translateY(-10%);
+}
+.sandals-list li:nth-of-type(6) figure img {
+    transform: scale(110%) translateY(-10%);
+}
+.sandals-list li:nth-of-type(7) figure img {
+    transform: scale(110%) translateY(-16%);
+}
+.sandals-list li:nth-of-type(8) figure img {
+    transform: scale(90%);
 }
