@@ -1,1 +1,69 @@
 @charset 'utf-8';
+/* ... existing CSS ... */
+
+#faq {
+    margin: 2rem 0 2rem 0;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 0.5rem;
+}
+
+.faq-wrap {
+    margin-bottom: 2rem;
+}
+
+.faq-item h3 {
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: var(--main-color); /* 링크 색상 */
+}
+
+.faq-item p {
+    margin-top: 0.5rem;
+    color: #555;
+}
+
+.faq-wrap {
+    margin-top: 2rem;
+}
+
+/* ... existing CSS ... */
+
+#size-guide {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 0.5rem; /* 10px = 1rem */
+    margin: 2rem 0 2rem 0;
+}
+
+#size-guide p {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+#size-guide table {
+    width: 80rem;
+    border-collapse: collapse; /* 테이블 경계선 합치기 */
+}
+
+#size-guide th,
+#size-guide td {
+    border: 1px solid #ddd; /* 10px = 1rem */
+    padding: 0.8rem; /* 8px = 0.8rem */
+    text-align: center;
+}
+
+#size-guide td:hover {
+    background: var(--main-color);
+    color: #fff;
+
+    transition: 0.3s;
+}
+
+#size-guide th {
+    background-color: #f2f2f2;
+}
+
+/* ... existing CSS ... */
+/* ... existing CSS ... */

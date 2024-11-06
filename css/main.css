@@ -166,6 +166,7 @@ nav {
 #hero {
     width: 176rem;
     height: 84rem;
+    height: 89vh;
     margin: 0 auto;
     border-radius: 3rem;
     background-image: url(./);
@@ -878,3 +879,60 @@ nav {
 .crocs-club:hover b {
     display: block;
 }
+
+/* ... existing code ... */
+
+/* 반응형 디자인을 위한 미디어 쿼리 */
+@media (max-width: 1200px) and (max-width: 768px) {
+    #header {
+        width: 100%; /* Adjust header width for smaller screens */
+        padding: 0 2rem; /* Reduce padding */
+    }
+
+    .gnb {
+        width: 100%; /* Make the navigation full width */
+    }
+
+    .user-actions {
+        gap: 2rem; /* Reduce gap between user action items */
+    }
+
+    .product-list li {
+        width: 45%; /* Adjust product list item width */
+    }
+
+    .collection-grid {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
+    }
+
+    .collection-grid {
+        grid-template-columns: 1fr; /* One column for small screens */
+    }
+
+    .product-list li {
+        width: 100%; /* Full width for product list items */
+    }
+
+    .user-actions {
+        flex-direction: column; /* Stack user actions vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .footer-nav {
+        flex-direction: column; /* Stack footer navigation items */
+    }
+
+    .footer-nav ul {
+        flex-direction: column; /* Stack footer nav items */
+    }
+
+    .benefit-list {
+        flex-direction: column; /* Stack benefit items */
+    }
+
+    .benefit-list li {
+        width: 100%; /* Full width for benefit items */
+    }
+}
+
+/* ... existing code ... */

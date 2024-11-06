@@ -23,7 +23,7 @@
 
 .explore-intro {
     width: 100%;
-    height: 40rem;
+    height: 20rem;
     /* background: #f9f; */
 
     position: relative;
@@ -39,6 +39,15 @@
 }
 
 /* 비주얼끝*/
+
+.comfort {
+    width: 100%;
+    height: 70rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .comfort ul {
     width: 100%;
@@ -144,7 +153,12 @@
 }
 /* ---------------------- */
 .Sustainability {
-    margin-top: 18rem;
+    width: 100%;
+    height: 70rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .Sustainability ul {
@@ -183,6 +197,21 @@
     color: #fff;
 
     z-index: 1;
+    transition: 0.3s;
+    opacity: 1;
+}
+
+.Sustainability ul li:hover p {
+    opacity: 1;
+    transition: 0.1s;
+    transform: translatex(10%);
+    text-align: center;
+}
+.Sustainability ul li:nth-of-type(2):hover p {
+    transform: translatex(18%);
+}
+.Sustainability ul li:nth-of-type(3):hover p {
+    transform: translatex(26%);
 }
 
 .Sustainability ul li::after {
@@ -194,19 +223,54 @@
     left: 0;
     top: 0;
 
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.4);
 
-    opacity: 0;
-    transition: 0.4s;
+    opacity: 1;
+    transition: 0.3s;
 }
 
 .Sustainability ul li:hover::after {
-    opacity: 1;
+    background: #83ce02;
 }
 
+.icon-wrap {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+
+    opacity: 0;
+    z-index: 1;
+    transition: 0.3s;
+
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+
+    left: -2rem;
+    padding-top: 20%;
+}
+
+.icon-wrap img {
+    width: 50%;
+    height: 50%;
+}
+
+.Sustainability ul li:hover .icon-wrap {
+    opacity: 1;
+    padding-top: 20%;
+    left: 0rem;
+}
 /* ............................... */
 .inspiration {
-    margin-top: 18rem;
+    width: 100%;
+    height: 100rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .inspiration ul {
@@ -272,7 +336,12 @@
 
 /* ...................... */
 .Customize {
-    margin: 18rem 0 20rem 0;
+    width: 100%;
+    height: 70rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .Customize ul {
@@ -289,9 +358,22 @@
     height: 45rem;
     border-radius: 1rem;
     overflow: hidden;
-    background: #f00;
+    /* background: #f00; */
 
+    transition: 0.3s;
     position: relative;
+}
+
+.Customize ul li::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
 }
 
 .Customize ul li figure {
@@ -318,15 +400,32 @@
     flex-direction: column;
 
     color: #fff;
+    z-index: 1;
 }
 
 .Customize ul li dl dt {
     font-weight: 600;
     font-size: 3rem;
 
-    margin-top: 2rem;
+    margin-top: 7rem;
+    transition: 0.3s;
 }
 .Customize ul li dl dd {
     font-weight: 400;
     font-size: 1.8rem;
+
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.Customize ul li:hover dl dt {
+    margin-top: 2rem;
+}
+
+.Customize ul li:hover dl dd {
+    opacity: 1;
+}
+
+.Customize ul li:hover::after {
+    background: rgba(0, 0, 0, 0.4);
 }

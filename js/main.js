@@ -96,6 +96,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const swiperConfig = {
         slidesPerView: 4,
         spaceBetween: 20,
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+        },
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
